@@ -7,6 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include "myheaders.h"
+#include "Helper_fns2.cc"
 
 using namespace std;
 
