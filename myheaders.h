@@ -1,19 +1,28 @@
-// DO NOT forget to add the prototypes for your ASort, BSort, and other functions below!!
+/*
+ * myheaders.h
+ * Landon Anstey
+ *  Created on: Nov 12, 2026
+ *  Author: lanstey2007
+ */
 
-
+#ifndef MYHEADERS_H
+#define MYHEADERS_H
 #include <string>
-#include <unistd.h>
-#define MAXSIZE	 2100000
+#define MAXSIZE 2100000
 
-using namespace std;
+void printmenu();
+void printarray(long data[], long size);
 
-void	printmenu();
-void	printarray(long data[], long size);
-int		readfile(string infilename, long data[]);
-int		writefile(long data[], long size, string outfilename);
-void	swap(long& x, long& y);
+int readfile(std::string infilename, long data[]);
+int writefile(long data[], long size, std::string outfilename);
 
-// Prototypes
-void bubblesort(long data[], long size);
-void mergesort(long data[], long first, long last);
-void merge(long data[], long first, long last);
+void swap(long& x, long& y);
+
+void insertionSort(long data[], int n);
+void bubbleSort(long data[], int n);
+void mergeSort(long data[], int n);
+void quickSort(long data[], int n);
+void selectionSort(long data[], int n);
+void shellSort(long data[], int n);
+
+#endif /* MYHEADERS_H_ */
